@@ -4,9 +4,9 @@
 
 body{
     display: grid;
-    grid-template-columns: 5% 20% 70% 5%; 
+    grid-template-columns: 40% 50% 10%; 
     grid-template-rows: 1fr auto;
-    grid-gap:30px 80px;
+
 }
 
 .header { 
@@ -16,31 +16,81 @@ body{
     padding: 15px 20px;
     justify-content: center;
     grid-row: 1;
-    grid-column: 1/5;
+    grid-column: 1/4;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 30px;
 }
 
 
 .box{
-    padding: 20px 150px;
     text-align: center;
     border: 1px solid white;
+    padding: 20px 150px;
 }
 
+.contact{
+    border-bottom: 3px black solid; 
+
+    align-self: center;
+    padding: 20px 20px;
+    margin: 10px;
+}
+
+.socialM{
+    padding: 20px 20px;
+    margin: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
 
 .sidebar{
     background-color: lightgray; 
-    grid-column: 2/3;
+    grid-column: 1/2;
     align-content: center;
-    text-align: center;
+    text-align: left;
+    margin-left: 300px; 
+    max-width: 250px;
+    min-width: 200px;
+}
+
+.bio{
+    border-bottom: 3px grey solid;
+}
+
+.exp{
+    border-bottom: 3px grey solid;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.edu{
+    border-bottom: 3px grey solid;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.skill{
+    padding-top: 40px;
+
+}
+
+@media (max-width: 1350px) {
+    .sidebar {
+        display: none;
+    }
 }
 
 img{
     border-radius: 50%;
     margin: 30px;
-    max-width:100%;
-    max-height:100%
+    max-width: 200px;
+    max-height: 200px;
+    align-self: center;
 }
 
 .mainContent{
-    grid-column: 3/5;
+    grid-column: 2/3;
 }
