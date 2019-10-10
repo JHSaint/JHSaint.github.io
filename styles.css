@@ -45,7 +45,7 @@ body{
 }
 
 .sidebar{
-    background-color: lightgray; 
+    background-color: #FFF4FD; 
     grid-column: 1/2;
     align-content: center;
     text-align: left;
